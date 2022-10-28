@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+}
+.header .logo{
+    color:gold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(2rem + 2vmin);
+    font-weight: bold;
+}
+.header a{
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.header ul{
+    min-width: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header ul li{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li a{
+    color:gray;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    font-size: calc(1rem + 1vmin);
+}
+.header ul li a:hover{
+    color:gold;
+}
+/*Стили для бордера*/
+.header label{
+    display: none;
+}
+.header > .checkbox{
+    display: none;
+}
+#checkbox:checked ~ ul{
+    display: flex;
+
+}
+.button{
+    font-size: calc(1rem + 1vmin);
+    color:gold;
+    display: none;
+}
+@media(max-width:760px){
+    .header ul{
+        display: none;
+        position: absolute;
+        top:8vw;
+        left:0vw;
+        height: auto;
+        width: 100vw;
+        background-color: gray;
+    }
+    .header ul li{
+        width: 100%;
+    }
+    .header label{
+        display: block;
+    }
+    .button{
+        display: block;
+
+    }
+}
+/*стили контента*/
+h1{
+    text-align: center;
+    color:red;
+    text-shadow: 3px 3px 5px black;
+    font-size: calc(2rem + 2vmin);
+    margin: 0;
+}
+img{
+    width: 15vw;
+    height: 10vw;
+    object-fit: cover;
+    object-position: center;
+    float:left;
+    margin: 0 1vw;
+
+}
+p{
+    font-size: calc(1.5rem + 2vmin);
+    text-align: justify;
+}
+.anker{
+    font-size: 20px;
+    font-style: italic;
+}
+.button-top{
+    float:right;
+    margin-right: 2vw;
+}
